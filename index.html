@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="index.js"></script>
 </head>
+
 <body id="top">
     <nav>
         <ul>
@@ -17,7 +19,7 @@
             <li class="navbar"><a href="#skills">SKILLS</a></li>
             <li class="navbar"><a href="#project">PROJECT</a></li>
             <li class="navbar"><a href="#contact">CONTACT ME</a></li>
-            <li class="navbar"><a href="#resume">RESUME</a></li>
+            <li class="navbar"><a href="CV- PARUL.pdf" download onclick="func()">RESUME</a></li>
         </ul>
     </nav>
     <div class="content">
@@ -27,26 +29,124 @@
         <a href="#top">
             <button id="scrollup">↑</button>
         </a>
-    </div>
-    <table class="table" cellspacing="30">
-        <tr class="img">
-            <td>
-                <img class="image" src="parul.jpg">
-            </td>
-            <td class="personal">
-                <h1 id="about">About Me</h1>
+        <img class="image" src="parul.jpg">
+        <p class="para">
+        <h1 id="about"><u>About Me</u></h1>
+        <div>
+            <p class="intro">
                 <span class="name">
                     HELLO, I am Parul Chaddha
                 </span>
                 <br>
-                A Student of Banasthali vidyapith and pursuing BACHELORS OF TECHNOLOGY(2021-2025) from information technology branch<br>
-               I'm a budding web developer , and along with I have hands-on experience in C and C++ languages. <br>
-               I'm a person that survives in a fast paced environment and can achieve my goals by commitment and dedication. 
-            </td>
-        </tr>
-    </table>
-    <a href="CV- PARUL.pdf" class = "btn" download>
-        <button class="resume" onclick="func()" >DOWNLOAD RESUME</button>
-    </a>
+                A Student of Banasthali vidyapith and pursuing BACHELORS OF TECHNOLOGY(2021-2025) from information
+                technology branch<br>
+                I'm a budding web developer , and along with I have hands-on experience in C and C++ languages. <br>
+                I'm a person that survives in a fast paced environment and can achieve my goals by commitment and
+                dedication.
+            </p>
+            <a href="CV- PARUL.pdf" download>
+                <button class="resume" onclick="func()">DOWNLOAD RESUME</button>
+            </a>
+            <div class="skills">
+                <h1 id="skills">
+                    <u>SKILLS</u>
+                </h1>
+                <p class="intro"></p>
+                <div class="box">
+                    <img src="html.jfif" alt="HTML">
+                    <img src="css.png" alt="CSS">
+                    <img src="py.jfif" alt="PYTHON">
+                </div><br>
+                <div class="box">
+                    <img src="cpp.png" alt="C++">
+                    <img src="c.png" alt="C">
+                </div><br>
+                <div class="box">
+                    <img src="javascript.png" alt="javascript">
+                </div>
+            </div>
+            <div class="projects">
+                <h1 id="projects"><u>Projects</u></h1>
+                <div class="box1">
+                    <h2>Desktop Assistant</h2>
+                    <h3> <a href="https://github.com/its-puneet/Desktop_Assistant" target="_blank">Link to Project</a>
+                    </h3>
+                    <p class="int">
+                        Implementing a part of <span>Artificial Intelligence</span>, I made a desktop assistant which
+                        can take <span>voice input</span> as well as <span>voice output</span> along with opening the
+                        softwares which i use the most, crack me a joke, show <span>COVID CASES</span>, tells weather
+                        forecast using different APIs and much more....
+                    </p>
+                </div>
+                <div class="box1">
+                    <h2>Sudoku Solver</h2>
+                    <h3> <a href="https://github.com/its-puneet/sudokusolver" target="_blank">Link to Project</a></h3>
+                    <p class="int">
+                        Implementing <span>Backtracking Algorithm</span>, I made a Sudoku Solver to showcase real life
+                        example of<span> Data Structures and Algorithms </span>. It uses <span>Backtracking
+                            Algorithm</span> to solve the Sudoku and give us the solution.
+                    </p>
+                </div>
+                <div class="box1">
+                    <h2>Ecommerce Store</h2>
+                    <h3> <a href="https://drive.google.com/drive/folders/1zpagKsCEU0La54kJnWzoFtUxfXaHUnSY?usp=sharing"
+                            target="_blank">Link to Project</a></h3>
+                    <p class="int">
+                        As a part of <span>Intern </span>at <span>Internship Studio</span> I made a Ecommerce Website
+                        using <span>HTML, CSS, BOOTSTRAP, JAVASCRIPT and JQUERY</span>. This Website was the final task
+                        of this <span>Internship</span>. Learned a lot about Web Development in this period.
+                    </p>
+                </div>
+                <div class="box1">
+                    <h2>Landing Page of a Local Gym</h2>
+                    <h3> <a href="https://its-puneet.github.io/dynamicfitness/" target="_blank">Link to Project</a></h3>
+                    <p class="int">
+                        I made a landing page of <span>Local GYM</span>using <span>HTML, CSS </span> (Less Responsive).
+                        This Webpage was a part of my <span>Web Development</span> Learning process. So, Just to test my
+                        skills, made this project due to which it is less responsive.
+                    </p>
+                </div>
+                <div class="box1">
+                    <h2>CodeChef Automation using Selenium</h2>
+                    <h3> <a href="https://github.com/its-puneet/Codechef-Automation-Using-Selenium" target="_blank">Link
+                            to Project</a></h3>
+                    <p class="int">
+                        <span>COdechef Automation </span>using <span>SELENIUM</span> is a project which automatically
+                        opens CODECHEF website and run a specific code on its compiler. This specific code has to be in
+                        <span>same directory</span>
+                    </p>
+                </div>
+                <div class="contact">
+                    <h1 id="contact">Contact Me</h1>
+                    <div class="social">
+                        <ul class="social-list">
+
+                            <li class="social-btn"><a
+                                    href="https://instagram.com/parul_veervanshi?igshid=YmMyMTA2M2Y=">I<i
+                                        class="instagram" target="_blank"></i></a></li>
+                            <li class="social-btn"><a href="https://github.com/parulchaddha" target="_blank">G<i
+                                        class="github"></i></a></li>
+                            <li class="social-btn"><a href="mailto:parul947a@gmail.com" target="_blank">M<i
+                                        class="google"></i></a></li>
+                            <li class="social-btn"><a href="https://www.linkedin.com/in/parul-chaddha-82393921b"
+                                    target="_blank">in<i class="linkedin"></i></a></li>
+
+                        </ul>
+                        <br>
+                        <div class="bio">
+                            <h2 id="more">Know me a Little More!</h2>
+                            <p class="details">
+                                <strong class="str">PARUL CHADDHA </strong> <br><br>
+                                <i class="mapmarker"></i> <span> 📍 Gorakhpur, Uttar Pradesh</span> <br><br>
+                                <i class="mobilephone"></i> 📱 +917607904604 <br><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </p>
+
+        </div>
 </body>
+
 </html>

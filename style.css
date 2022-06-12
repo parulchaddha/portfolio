@@ -3,22 +3,25 @@
 font-family: 'Lobster', cursive;
 font-family: 'Roboto Mono', monospace;*/
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=EB+Garamond&family=Lobster&family=Roboto+Mono:ital@1&display=swap');
+
 /*font-family: 'EB Garamond', serif;
 font-family: 'Lobster', cursive;
 font-family: 'Roboto Mono', monospace;*/
-body{
-    font-family:'Dancing Script', cursive ;
+body {
+    font-family: 'Dancing Script', cursive;
     background: url("bbg.jpg");
     opacity: 0.9;
 }
-ul{
+
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color:grey
+    background-color: grey
 }
-.navbar{
+
+.navbar {
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -28,22 +31,30 @@ ul{
     padding-bottom: 0.5rem;
     float: left;
 }
-.navbar a{
+
+.navbar a {
     display: block;
     color: white;
     text-align: center;
     padding: 16px 18px;
-    text-decoration:none;
+    text-decoration: none;
     transition: all 0.3s ease;
     font-size: 1.25rem;
     cursor: pointer;
 }
-.active{
+
+li a:hover {
+    background-color: palevioletred;
+    color: lightyellow;
+}
+
+.active {
     background-color: palevioletred;
 }
-h1{
+
+h1 {
     font-size: 40px;
-    font-family:'EB Garamond', serif ;
+    font-family: 'EB Garamond', serif;
     align-items: center;
     text-align: center;
     border: 60px;
@@ -54,28 +65,45 @@ h1{
     transition: all 0.3s ease;
     margin-bottom: 75px;
 }
-.quote{
+
+#about:hover {
+    color: palevioletred;
+    cursor: pointer;
+    text-shadow: none;
+}
+
+.quote {
     text-shadow: 2px 2px 5px palevioletred;
     background-color: gray;
     margin: auto;
     margin-top: 75px;
+
 }
-img{
-    width: 100%;
-    height:100%;
-    margin-top: 20px;
+
+.quote:hover {
+    color: palevioletred;
+    cursor: pointer;
+    background-color: lightyellow;
+    text-shadow: none;
 }
-.table{
-    margin-left: 200px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+
+img {
+    width: 250px;
+    height: 450px;
+    margin-top: 80px;
+    border-radius: 8px;
+    float: left;
 }
-.personal{
-    color:lightgoldenrodyellow;
+
+.intro {
+    color: lightgoldenrodyellow;
     font-size: 30px;
-    font-family: 'EB Garamond', serif ;
+    font-family: 'EB Garamond', serif;
     margin: auto;
+    position: relative;
+    left: 3%;
 }
+
 #scrollup {
     color: white;
     font-size: 30px;
@@ -91,30 +119,235 @@ img{
     cursor: pointer;
     border: none;
 }
-.name{
+
+.name {
     font-family: 'Dancing Script', cursive;
     font-size: 33px;
     color: palevioletred;
 }
-#about{
+
+#about {
     text-align: center;
     text-decoration: underline;
-    color:bisque;
+    color: bisque;
     text-shadow: 2px 2px 5px palevioletred;
     margin-top: 0;
+    position: relative;
+    left: 20%;
+    font-size: 60px;
 }
-.resume{
-    padding: 10px;
-    background-color:palevioletred ;
-    border: 5px solid bisque;
-    border-radius: 30px;
-    color:black;
-    text-decoration:none;
+
+.resume {
+    padding: 8px;
+    background-color: palevioletred;
+    border: 3px solid bisque;
+    border-radius: 20px;
+    color: black;
+    text-decoration: none;
     font-weight: 1000;
     transition: all 0.3s ease;
-    font-size: 30px;
+    font-size: 25px;
     cursor: pointer;
+    position: relative;
+    left: 30%;
 }
-.btn{
+
+.resume:hover {
+    background-color: black;
+    color: lightyellow;
+    border: 2px solid hotpink;
+}
+
+#skills {
+    text-align: center;
+    text-decoration: underline;
+    color: bisque;
+    text-shadow: 2px 2px 5px palevioletred;
+    margin-top: 300px;
+    position: relative;
+    left: 25%;
+    font-size: 60px;
+    margin-bottom: 100px;
+}
+
+.box {
+    text-align: center;
+    padding: 10px;
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+    left: 5%;
+}
+
+.box img {
+    height: 200px;
+    transition: all 0.3s ease;
+}
+
+.box img:hover {
+    opacity: 0.5;
+}
+
+#skills:hover {
+    color: palevioletred;
+    cursor: pointer;
+    text-shadow: none;
+}
+
+#projects {
+    text-align: center;
+    text-decoration: underline;
+    color: bisque;
+    text-shadow: 2px 2px 3px palevioletred;
+    margin-top: 600px;
+    position: relative;
+    left: 25%;
+    font-size: 60px;
+    margin-bottom: 100px;
+}
+
+#projects:hover {
+    color: palevioletred;
+    cursor: pointer;
+    text-shadow: none;
+}
+
+.box1 {
+    border: 4px dashed palevioletred;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 12px;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.int {
+    color: lightgoldenrodyellow;
+    font-size: 30px;
+    font-family: 'EB Garamond', serif;
+    margin: auto;
+}
+h2{
+    font-size: 50px;
+    color: beige;
+    transition: all 0.3s ease;
+    text-shadow: 2px 2px 5px palevioletred;
+}
+h2:hover {
+    background-color: black;
+    color: lightyellow;
+    border: 2px solid hotpink;
+}
+.box1 a{
+    color:darkgoldenrod;
+    font-size: 30px;
+}
+.box1 a:hover{
+    background-color: black;
+    color:palevioletred;
+    border: 2px solid lightyellow;
+    border-radius: 3px;
+}
+#contact{
+    text-align: center;
+    text-decoration: underline;
+    color: bisque;
+    text-shadow: 2px 2px 3px palevioletred;
+    margin-top: 100px;
+    position: relative;
+    left: 25%;
+    font-size: 60px;
+}
+
+#contact:hover {
+    color: palevioletred;
+    cursor: pointer;
+    text-shadow: none;
+}
+.social-list{
+    display: flex;
+    text-align: center;
     align-items: center;
+    justify-content: center;
+    background-color: palevioletred;
+    height:80px;
+}
+.social-btn{
+  position: relative;
+  display: block;
+  color:beige;
+  font-size: 30px;
+  height: 60px;
+  width: 60px;
+  background:lightpink;
+  line-height: 60px;
+  border-radius: 50%;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: 1s;
+}
+.social-btn a{
+    text-decoration: none;
+    color:crimson;
+}
+.social-btn:hover{
+    box-shadow: 0 0 15px black;
+    text-shadow: 0 0 15px black;
+}
+.social-btn:before{
+    position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: inherit;
+  width: inherit;
+  border-radius: 50%;
+  transform: scale(.9);
+  z-index: -1;
+  transition: 1s;
+}
+.bio{
+    border: 4px solid hotpink;
+    width: 500px;
+    height:350px;
+    position:relative;
+    left:35%;
+    margin-top: 50px;
+}
+.contact h2{
+    margin-top: 15px;
+}
+.details{
+    color: lightgoldenrodyellow;
+    font-size: 30px;
+    font-family: 'EB Garamond', serif;
+    align-items: center;
+    text-align: center;
+}
+#more{
+    font-size: 50px;
+    color: beige;
+    transition: all 0.3s ease;
+    text-shadow: 2px 2px 5px palevioletred;
+    text-align: center;
+    align-items:center;
+}
+#more:hover {
+    background-color: black;
+    color: lightyellow;
+    border: 2px solid hotpink;
+}
+span{
+    font-family: 'Dancing Script', cursive;
+}
+.str{
+    color: beige;
+    transition: all 0.3s ease;
+    text-shadow: 2px 2px 5px palevioletred;
+}
+.str:hover{
+    text-decoration: underline;
+     color:palevioletred;
 }
